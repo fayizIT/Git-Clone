@@ -1,8 +1,8 @@
 // import React from 'react'
-import { IoMdArrowDropdown } from 'react-icons/io';
-import {MDRssFeed} from "react-icons/md";
+// import { IoMdArrowDropdown } from 'react-icons/io';
 import { IoBulbOutline } from 'react-icons/io5'
 import { MdRssFeed } from 'react-icons/md';
+import github from './img/github.png';
 
 
 function MainRight() {
@@ -13,7 +13,6 @@ function MainRight() {
   <h2>Following</h2>
   <h2>For you</h2>
   </div>
-  I
   <div className="lineTwo"/>
   <div className='box'>
   <h2>
@@ -44,7 +43,7 @@ function MainRight() {
     {/* footer */}
     <div className="footer">
     <div className="footerFirst">
-        {/* <img src={} alt=''/> */}
+    <img src={github} alt="Website logo" />
         <h4>GitHub Clone</h4>
     </div>
     <div className='footerSecond'>
@@ -54,6 +53,12 @@ function MainRight() {
         <h4>Shop</h4>
         <h4>GitHub Clone</h4>
         <h4>Pricing</h4>
+      </div>
+      <div className="footerSecondInside">
+        <h4>API</h4>
+        <h4>Training</h4>
+        <h4>Status</h4>
+        <h4>Security</h4>
       </div>
       <div className="footerSecondInside">
         <h4>Terms and condition</h4>
