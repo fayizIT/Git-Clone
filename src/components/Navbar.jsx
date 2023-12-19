@@ -1,9 +1,10 @@
 // import React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FaBell } from 'react-icons/fa';
 import { FiPlus } from 'react-icons/fi';
 import { IoMdArrowDropdown } from 'react-icons/io';
-import github from '../assets/github.png'
+// import github from '../assets/github.png';
+import github from './img/github.png';
 
 
 
@@ -11,7 +12,7 @@ const Navbar = () => {
   return (
    <nav className="navbar">
 
-    <div className="navleft">
+    <div className="navLeft">
     <img src={github} alt="Website logo" />
    
    
@@ -36,6 +37,9 @@ const Navbar = () => {
 <div className="navRightIcons">
   <FiPlus/>
   <IoMdArrowDropdown/>
+</div>
+<div className="navRightIcons">
+  {/* <img src='https://avatars.githubusercontent.com/u/100133276?v=4' alt='profile'></img> */}
 </div>
 </div>
    </nav>

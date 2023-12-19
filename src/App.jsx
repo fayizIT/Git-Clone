@@ -1,15 +1,16 @@
 import Navbar from "./components/Navbar";
 
+import "./app.scss"
+
 function App() {
 
 
   return (
-    <>
+    <div className="App">
     
-     <h1>Welcome to git Hub page</h1>
      <Navbar/>
     
-    </>
+    </div>
   )
 }
 
