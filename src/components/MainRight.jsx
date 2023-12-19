@@ -40,6 +40,29 @@ function MainRight() {
         <p>Subscribe to the channel, to Stay updated</p>
       </div>
     </div>
+
+    {/* footer */}
+    <div className="footer">
+    <div className="footerFirst">
+        {/* <img src={} alt=''/> */}
+        <h4>GitHub Clone</h4>
+    </div>
+    <div className='footerSecond'>
+      <div className="footerSecondInside">
+        <h4>Blog</h4>
+        <h4>About</h4>
+        <h4>Shop</h4>
+        <h4>GitHub Clone</h4>
+        <h4>Pricing</h4>
+      </div>
+      <div className="footerSecondInside">
+        <h4>Terms and condition</h4>
+        <h4>Privacy</h4>
+        <h4>Docs</h4>
+      </div>
+    </div>
+</div>
+
   </div>
   </div>
   )
