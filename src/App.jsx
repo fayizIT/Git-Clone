@@ -1,4 +1,6 @@
 import Navbar from "./components/Navbar";
+import Main from "./components/Main";
+
 
 import "./app.scss"
 
@@ -9,6 +11,8 @@ function App() {
     <div className="App">
     
      <Navbar/>
+     <Main/>
+   
     
     </div>
   )

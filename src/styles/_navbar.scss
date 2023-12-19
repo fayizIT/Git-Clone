@@ -38,6 +38,45 @@
         }
     }
 
+    .navCenter {
+        flex:1;
+        display:flex;
+        gap:18px;
+        margin-left: 18px;
+        align-items: center;
+        color: white;
+
+
+        h2{
+            font-size:14px;
+            font-weight: bold;
+        }
+    }
+
+    .navRight{
+        display:flex;
+        align-items:center;
+        width: 110px;
+        justify-content:space-between;
+        border: 1px solid red;
+        
+        > * {
+            cursor: pointer;
+            }
+            img {
+                width: 20px;
+                object-fit: contain;
+                border-radius: 50%;
+                }
+                .navRightIcons {
+                    display: flex;
+                align-items: center;
+                }
+        
+        
+    
+    }
+
 
 }
 

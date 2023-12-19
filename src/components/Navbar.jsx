@@ -39,7 +39,7 @@ const Navbar = () => {
   <IoMdArrowDropdown/>
 </div>
 <div className="navRightIcons">
-  {/* <img src='https://avatars.githubusercontent.com/u/100133276?v=4' alt='profile'></img> */}
+  <img src='https://avatars.githubusercontent.com/u/100133276?v=4' alt='profile'></img>
 </div>
 </div>
    </nav>
