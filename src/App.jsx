@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Profile from "./pages/Profile";
+
 
 
 import "./app.scss"
@@ -19,6 +21,7 @@ function App() {
      <Routes>
 
      < Route path="/" element={<Main/>}/>
+     <Route path="/profile" element ={<Profile/>}/>
      </Routes>
      
      

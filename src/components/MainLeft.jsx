@@ -2,6 +2,7 @@
 // import React from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import lists from "../lists.json";
+import { Link } from 'react-router-dom';
 
 
 function MainLeft() {
@@ -37,7 +38,15 @@ function MainLeft() {
               </div>
             </div>
           ))}
-          <a href='#'>Show more</a>
+          <Link to="/profile">Show more</Link>
+        </div>
+        <div className="line" />
+        <div className='recentRepo'>
+        <div className="recentRepos">
+          <h2>Recent Activities</h2>
+        </div>
+        <p>Thanks for watching</p>
+
         </div>
 
         <div className="line" />

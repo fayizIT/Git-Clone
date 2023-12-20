@@ -3,6 +3,7 @@
 import { IoBulbOutline } from 'react-icons/io5'
 import { MdRssFeed } from 'react-icons/md';
 import github from './img/github.png';
+import { Link } from 'react-router-dom';
 
 
 function MainRight() {
@@ -24,7 +25,7 @@ function MainRight() {
     </span></p>
 
     <button className='btn'>
-      <a href='#'>GitHub Clone</a>
+    <Link to="/profile">GitHub Clone</Link>
     </button>
     </div>
     <div className="boxcenter">
