@@ -5,18 +5,23 @@ import { FiPlus } from 'react-icons/fi';
 import { IoMdArrowDropdown } from 'react-icons/io';
 // import github from '../assets/github.png';
 import github from './img/github.png';
+import { Link } from 'react-router-dom';
 
 
 
 const Navbar = () => {
+  const [showMenu,setShowMenu] =useState(false)
   return (
    <nav className="navbar">
-
-    <div className="navLeft">
-    <img src={github} alt="Website logo" />
-   
-   
 {/* left */}
+    <div className="navLeft">
+      <Link to="/">
+      <img src={github} alt="Website logo" />
+      </Link>
+    
+   
+   
+
    <div>
     <input type="text" placeholder="Search or jumb"/>
    </div>
@@ -42,6 +47,7 @@ const Navbar = () => {
   <img src='https://avatars.githubusercontent.com/u/100133276?v=4' alt='profile'></img>
 </div>
 </div>
+{showMenu && <Menu/>}
    </nav>
   );
 };
