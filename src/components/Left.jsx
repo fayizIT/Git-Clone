@@ -1,24 +1,38 @@
-// import React from 'react'
+// Import the necessary React component and MdInsertEmoticon icon from react-icons/md
+
 import { MdInsertEmoticon } from 'react-icons/md';
 
+// Left component
 function Left() {
   return (
     <div className="left">
-        <div className="image">
-            <img src="https://avatars.githubusercontent.com/u/100133276?v=4" alt=""/>
-            <div className="emoticonBox">
-                <MdInsertEmoticon className="emoticon"/>
+        
+      {/* Image container */}
+      <div className="image">
 
-            </div>
+        {/* User profile image */}
+        <img src="https://avatars.githubusercontent.com/u/100133276?v=4" alt="" />
+
+        {/* Emoticon box */}
+        <div className="emoticonBox">
+
+          {/* Emoticon icon */}
+          <MdInsertEmoticon className="emoticon" />
         </div>
-        <div className="leftDetails">
-            <h2>FayizIT</h2>
-            <button>Edit profile</button>
-        </div>
+      </div>
 
+      {/* Left details container */}
+      <div className="leftDetails">
 
+        {/* User name */}
+        <h2>FayizIT</h2>
+        
+        {/* Edit profile button */}
+        <button>Edit profile</button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Left
+// Export the Left component
+export default Left;

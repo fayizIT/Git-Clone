@@ -1,24 +1,25 @@
-// MainLeft.jsx
-// import React from 'react';
+// Import necessary components and libraries
+
 import { IoMdArrowDropdown } from 'react-icons/io';
 import lists from "../lists.json";
 import { Link } from 'react-router-dom';
 
-
+// MainLeft component
 function MainLeft() {
   return (
     <div className='mainLeftContainer'>
       <div className="mainLeft">
+        {/* User info */}
         <div className="mainLeftName">
           <img src='https://avatars.githubusercontent.com/u/100133276?v=4' alt='profile' />
           <h2>FayizIT</h2>
           <IoMdArrowDropdown />
         </div>
 
-        {/* line */}
+        {/* Line separator */}
         <div className="line" />
 
-        {/* Recent Repo */}
+        {/* Recent Repositories */}
         <div className="recentRepo">
           <div className="recentRepos">
             <h2>Recent Repositories</h2>
@@ -29,6 +30,7 @@ function MainLeft() {
           </div>
         </div>
 
+        {/* List of repositories */}
         <div className="mainLeftLists">
           {lists.map((item, idx) => (
             <div className="item" key={idx}>
@@ -40,17 +42,22 @@ function MainLeft() {
           ))}
           <Link to="/profile">Show more</Link>
         </div>
+
+        {/* Line separator */}
         <div className="line" />
+
+        {/* Recent Activities */}
         <div className='recentRepo'>
-        <div className="recentRepos">
-          <h2>Recent Activities</h2>
+          <div className="recentRepos">
+            <h2>Recent Activities</h2>
+          </div>
+          <p>Thanks for watching</p>
         </div>
-        <p>Thanks for watching</p>
 
-        </div>
-
+        {/* Line separator */}
         <div className="line" />
-        
+
+        {/* Your teams */}
         <div className='recentRepo'>
           <div className="recentRepos">
             <h2>Your teams</h2>
@@ -64,4 +71,5 @@ function MainLeft() {
   );
 }
 
+// Export the MainLeft component
 export default MainLeft;

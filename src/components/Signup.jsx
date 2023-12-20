@@ -2,7 +2,9 @@
 
 function Signup() {
   return (
-    <div>Signup</div>
+    <div>
+      welcome to signup page
+    </div>
   )
 }
 

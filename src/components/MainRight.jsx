@@ -1,77 +1,77 @@
-// import React from 'react'
-// import { IoMdArrowDropdown } from 'react-icons/io';
-import { IoBulbOutline } from 'react-icons/io5'
+// Import necessary components and icons
+// import React from 'react';
+import { IoBulbOutline } from 'react-icons/io5';
 import { MdRssFeed } from 'react-icons/md';
-import github from './img/github.png';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
-
+// MainRight component
 function MainRight() {
-  return(
-  <div className="mainRight">
-  <div className="mainRightContainer">
-  <div className="mainRightText">
-  <h2>Following</h2>
-  <h2>For you</h2>
-  </div>
-  <div className="lineTwo"/>
-  <div className='box'>
-  <h2>
-    Welcome... this Github page Design using react js 
-  </h2>
-  <p>Follow me on <span>You Tube
-    </span>,<span>Twitter
-    </span> and <span>FaceBook
-    </span></p>
+  // Define following and followers count
+  const followingCount = 24;
+  const followersCount = 100;
 
-    <button className='btn'>
-    <Link to="/profile">GitHub Clone</Link>
-    </button>
-    </div>
-    <div className="boxcenter">
-      <div className="boxcenterFirst">
-        <IoBulbOutline/>
-        <p>
-          On my Channel there are videos with <span>React</span>,<span>Next js</span><span>Tailwind Css</span><span>Html and css</span>
-        </p>
-      </div>
-      <div className="boxCenterFirst">
-        <MdRssFeed/>
-        <p>Subscribe to the channel, to Stay updated</p>
-      </div>
-    </div>
+  return (
+    <div className="mainRight">
+      <div className="mainRightContainer">
 
-    {/* footer */}
-    <div className="footer">
-    <div className="footerFirst">
-    <img src={github} alt="Website logo" />
-        <h4>GitHub Clone</h4>
-    </div>
-    <div className='footerSecond'>
-      <div className="footerSecondInside">
-        <h4>Blog</h4>
-        <h4>About</h4>
-        <h4>Shop</h4>
-        <h4>GitHub Clone</h4>
-        <h4>Pricing</h4>
-      </div>
-      <div className="footerSecondInside">
-        <h4>API</h4>
-        <h4>Training</h4>
-        <h4>Status</h4>
-        <h4>Security</h4>
-      </div>
-      <div className="footerSecondInside">
-        <h4>Terms and condition</h4>
-        <h4>Privacy</h4>
-        <h4>Docs</h4>
-      </div>
-    </div>
-</div>
 
-  </div>
-  </div>
-  )
-  }
+        {/* Following and Followers section */}
+        <div className="mainRightText">
+          <div className="followCount">
+            <h2>Following</h2>
+            <span style={{ display: 'block', textAlign: 'center' }}>{followingCount}</span>
+          </div>
+          <div className="followCount">
+            <h2>Followers</h2>
+            <span style={{ display: 'block', textAlign: 'center' }}>{followersCount}</span>
+          </div>
+        </div>
 
-export default MainRight
+        {/* Horizontal line */}
+        <div className="lineTwo" />
+
+        {/* Welcome box */}
+        <div className="box">
+          <h2>Welcome to Github Homepage... this Github  page Design using React.js, React-Router, and SCSS</h2>
+          <p>
+            Follow me on <span>YouTube</span>, <span>Twitter</span>, and <span>Facebook</span>
+          </p>
+
+
+          {/* GitHub Clone button */}
+          <button className="btn">
+            <Link to="/profile">GitHub Clone</Link>
+          </button>
+        </div>
+
+
+        {/* Info boxes */}
+        <div className="boxcenter">
+          <div className="boxcenterFirst">
+            <p>
+              <IoBulbOutline />
+              On my channel, there are videos with <span>React</span>, <span>Next.js</span>, <span>Tailwind CSS</span>,{' '}
+              <span>HTML</span>, and <span>CSS</span>
+            </p>
+          </div>
+          <div className="boxCenterFirst">
+            <p>
+              <MdRssFeed />
+              Subscribe to the channel to stay updated
+            </p>
+          </div>
+        </div>
+
+
+        {/* Footer component */}
+        <Footer />
+
+
+      </div>
+    </div>
+  );
+}
+
+// Export the MainRight component
+export default MainRight;
